@@ -1,17 +1,15 @@
 import java.util.Scanner;
-public class EuclideanDivsion{
-    public static void main(String[] args){
-        //Scanner object to receive keyboard input
-Scanner input = new Scanner(System.in);
-        
-//Prompt the user to enter the height of a rectangle
-System.out.println("Enter an integer: ");
-int num = input.nextInt();
+public class EuclideanDivision {
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+        System.out.println("Enter the dividend:");
+        int dividend = input.nextInt();
+        System.out.println("enter the divisor:");
+        int divisor;
+        divisor = input.nextInt();
+        int quotient = dividend / divisor;
+        int remainder = dividend % divisor;
+    System.out.println(dividend + " = " + quotient + " * " + divisor + " + " + remainder);
 
-//Display the number
-System.out.println("The number is: " + num);
-    Int quotient = dividend / divisor;
-    Int remainder = dividend % divisor;
-    Syste.out.println(dividend + " = " + quotient + " * " + divisor + remainder);
     }
 }
